@@ -1,0 +1,27 @@
+.container {
+	composes: container from '../../styles/_root.scss';
+}
+
+.hero_img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero_img_wrap {
+	height: 800px;
+}
+
+.hero_img_wrap_first {
+	background: url('../../assets/images/heroimages/slide1.png') no-repeat center/cover;
+	background-position-y: 33%;
+}
+
+.hero_img_wrap_second {
+	background: url('../../assets/images/heroimages/slide2.png') no-repeat center/cover;
+	background-position-y: 45%;
+}
+
+.hero_img_wrap_third {
+	background: url('../../assets/images/heroimages/slide3.png') no-repeat center/cover;
+	background-position-y: 50%;
+}
