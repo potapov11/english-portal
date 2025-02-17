@@ -15,6 +15,22 @@
 		justify-content: space-between;
 	}
 
+	&_info_right {
+		color: black;
+
+		&_white_mode {
+			color: aliceblue;
+		}
+	}
+
+	&_logo {
+		color: black;
+
+		&_white_mode {
+			color: aliceblue;
+		}
+	}
+
 	&_list {
 		display: flex;
 		list-style: none;
@@ -23,9 +39,12 @@
 			margin-right: 20px;
 		}
 
-		&_item a {
-			text-decoration: none;
+		&_link {
 			color: black;
+
+			&_white_mode {
+				color: aliceblue;
+			}
 		}
 	}
 }

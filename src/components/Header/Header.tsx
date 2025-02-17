@@ -1,28 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 import classNames from 'classnames';
+import { useLocation } from 'react-router-dom';
 
 export const Header = () => {
+	const location = useLocation();
+	const [lightHeader, setLightHeader] = useState(false);
+
+	useEffect(() => {
+		if (location.pathname === '/memory') {
+			setLightHeader(true);
+		} else {
+			setLightHeader(false);
+		}
+	}, [location]);
+
 	return (
 		<header className={styles.header}>
 			<nav className={classNames(styles.header_nav, styles.container)}>
-				<div>Лого</div>
+				<div className={classNames(styles.header_logo, { [styles.header_logo_white_mode]: lightHeader })}>Лого</div>
 				<ul className={styles.header_list}>
 					<li className={styles.header_list_item}>
-						<Link to="/">Корпоративное обучение</Link>
+						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+							Корпоративное обучение
+						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/">Запоминание</Link>
+						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+							Запоминание
+						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/">Тексты</Link>
+						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+							Тексты
+						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/">Тесты</Link>
+						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+							Тесты
+						</Link>
 					</li>
 				</ul>
-				<div>Информация справа</div>
+				<div className={classNames(styles.header_info_right, { [styles.header_info_right_white_mode]: lightHeader })}>Информация справа</div>
 			</nav>
 		</header>
 	);

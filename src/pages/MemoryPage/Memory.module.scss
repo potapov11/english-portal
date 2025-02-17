@@ -1,0 +1,10 @@
+@use '../../styles/vars' as *;
+
+.container {
+	composes: container from '../../styles/_root.scss';
+}
+
+.memory {
+	min-height: 100vh;
+	background: linear-gradient(90deg, #15173c, #2375ef);
+}
