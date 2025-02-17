@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
+import classNames from 'classnames';
 
 export const Header = () => {
 	return (
 		<header className={styles.header}>
-			<nav className={styles.header_nav}>
+			<nav className={classNames(styles.header_nav, styles.container)}>
 				<div>Лого</div>
 				<ul className={styles.header_list}>
 					<li className={styles.header_list_item}>

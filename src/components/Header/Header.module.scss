@@ -1,4 +1,9 @@
+@use '../../styles/vars' as *;
+
 .header {
+	font-family: $font-montserrat;
+	font-style: normal;
+	font-weight: 600;
 	padding: 20px;
 	background-color: transparent;
 	position: absolute;
@@ -17,5 +22,14 @@
 		&_item:not(:last-child) {
 			margin-right: 20px;
 		}
+
+		&_item a {
+			text-decoration: none;
+			color: black;
+		}
 	}
+}
+
+.container {
+	composes: container from '../../styles/_root.scss';
 }

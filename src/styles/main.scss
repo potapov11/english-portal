@@ -2,7 +2,7 @@
 @use 'root' as *;
 
 //стили slider-swiper
-@import 'swiper/css/pagination';
-@import 'swiper/css/scrollbar';
-@import 'swiper/css';
-@import 'swiper/css/effect-coverflow';
+@use 'swiper/css/pagination' as *;
+@use 'swiper/css/scrollbar' as *;
+@use 'swiper/css' as *;
+@use 'swiper/css/effect-coverflow' as *;
