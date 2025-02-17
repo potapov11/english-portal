@@ -1,14 +1,17 @@
-import React from 'react';
 import { Header } from '../Header/Header';
-import { Hero } from '../Hero/Hero.tsx';
-import { HeroSwiper } from '../Swiper/Swiper-hero.tsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home } from '../../pages/Home/Home.tsx';
+import { MemoryPage } from '../../pages/MemoryPage/MemoryPage.tsx';
 import styles from './App.module.scss';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Hero />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/memory" element={<MemoryPage />} />
+			</Routes>
 		</>
 	);
 }
