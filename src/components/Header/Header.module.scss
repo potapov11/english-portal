@@ -1,5 +1,9 @@
 @use '../../styles/vars' as *;
 
+.container {
+	composes: container from '../../styles/_root.scss';
+}
+
 .header {
 	font-family: $font-montserrat;
 	font-style: normal;
@@ -47,8 +51,4 @@
 			}
 		}
 	}
-}
-
-.container {
-	composes: container from '../../styles/_root.scss';
 }

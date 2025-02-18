@@ -1,4 +1,4 @@
-const words = [
+export const words = [
 	{ id: 1, english: 'Apple', russian: 'Яблоко' },
 	{ id: 2, english: 'Book', russian: 'Книга' },
 	{ id: 3, english: 'Cat', russian: 'Кошка' },
