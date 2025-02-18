@@ -11,5 +11,7 @@
 	margin-right: auto;
 	display: grid;
 	gap: 20px;
+	list-style: none;
 	grid-template-columns: repeat(6, 1fr);
+	font-family: $font-montserrat;
 }
