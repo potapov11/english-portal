@@ -22,12 +22,14 @@ export const Header = () => {
 				<div className={classNames(styles.header_logo, { [styles.header_logo_white_mode]: lightHeader })}>Лого</div>
 				<ul className={styles.header_list}>
 					<li className={styles.header_list_item}>
-						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader }, { [styles.header_current_item]: location.pathname === '/' })}>
 							Корпоративное обучение
 						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/memory" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+						<Link
+							to="/memory"
+							className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader }, { [styles.header_current_item]: location.pathname === '/memory' })}>
 							Запоминание
 						</Link>
 					</li>
