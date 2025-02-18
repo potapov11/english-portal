@@ -27,7 +27,7 @@ export const Header = () => {
 						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+						<Link to="/memory" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
 							Запоминание
 						</Link>
 					</li>
