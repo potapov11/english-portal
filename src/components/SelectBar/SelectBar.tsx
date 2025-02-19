@@ -1,9 +1,14 @@
 import { Select, Space } from 'antd';
+import { useDispatch } from 'react-redux';
+import { selectWordAction } from '../../services/actions/selectWordsAction';
 
 export const SelectBar = () => {
+	const dispatch = useDispatch();
 	const handleChange = (value: string) => {
 		console.log(`selected ${value}`);
+		dispatch(selectWordAction());
 	};
+
 	return (
 		<Space wrap>
 			<Select

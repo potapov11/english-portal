@@ -18,3 +18,5 @@ export const words = [
 	{ id: 17, english: 'Family', russian: 'Семья' },
 	{ id: 18, english: 'Happiness', russian: 'Счастье' },
 ];
+
+export const ADD_SELECTED_WORD_TYPE = 'ADD_SELECTED_WORD_TYPE';
