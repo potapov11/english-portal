@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 import classNames from 'classnames';
 import { useLocation } from 'react-router-dom';
 
-export const Header = () => {
+export const Header = (): React.JSX.Element => {
 	const location = useLocation();
 	const [lightHeader, setLightHeader] = useState(false);
 

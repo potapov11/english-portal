@@ -7,9 +7,9 @@ interface ComponentProps {
 	russianWord: string;
 }
 
-export const FlipCard = ({ englishWord, russianWord }: ComponentProps) => (
-		<div className={styles.card}>
-			<div className={classNames(styles.side, styles.front)}>{englishWord}</div>
-			<div className={classNames(styles.side, styles.back)}>{russianWord}</div>
-		</div>
-	);
+export const FlipCard = ({ englishWord, russianWord }: ComponentProps): React.JSX.Element => (
+	<div className={styles.card}>
+		<div className={classNames(styles.side, styles.front)}>{englishWord}</div>
+		<div className={classNames(styles.side, styles.back)}>{russianWord}</div>
+	</div>
+);

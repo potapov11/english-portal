@@ -1,11 +1,13 @@
+import React from 'react';
 import { Select, Space } from 'antd';
 import { useDispatch } from 'react-redux';
 import { selectWordAction } from '../../services/actions/selectWordsAction';
 
-export const SelectBar = () => {
+export const SelectBar = (): React.JSX.Element => {
 	const dispatch = useDispatch();
 	const handleChange = (value: string) => {
-		console.log(`selected ${value}`);
+		const newvalue = value;
+		console.error(newvalue);
 		dispatch(selectWordAction());
 	};
 
