@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import { MemoryFlip } from '../../components/MemoryFlip/MemoryFlipComponent/MemoryFlip.tsx';
 import { SelectBar } from '../../components/SelectBar/SelectBar.tsx';
 
-export const MemoryPage = () => {
-	return (
+export const MemoryPage = () => (
 		<div className={classNames(styles.memory)}>
 			<div className={classNames(styles.memory_wrap, styles.container)}>
 				<SelectBar />
@@ -13,4 +12,3 @@ export const MemoryPage = () => {
 			</div>
 		</div>
 	);
-};
