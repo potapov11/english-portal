@@ -1,13 +1,10 @@
-// import { useState, useEffect } from "react"
+import { useEffect, useState } from 'react';
 
-import { useEffect } from 'react';
-import { useState } from 'react';
-
-export const UseFetch = (url) => {
+export const UseFetch = (url: string) => {
 	const [serverData, setData] = useState(null);
 	const [isLoading, setIsLoading] = useState(true);
 
-	const fetchFunc = async (url) => {
+	const fetchFunc = async (url: string) => {
 		try {
 			const res = await fetch(url);
 
@@ -19,7 +16,11 @@ export const UseFetch = (url) => {
 
 			setData(data);
 		} catch (e) {
-			console.error(e.message);
+			if (e instanceof Error) {
+				console.error(e.message);
+			} else {
+				console.error('An unknown error occurred');
+			}
 		} finally {
 			setIsLoading(false);
 		}
@@ -27,9 +28,9 @@ export const UseFetch = (url) => {
 
 	useEffect(() => {
 		if (url) {
-			fetchFunc();
+			fetchFunc(url);
 		} else {
-			console.log('url не передан');
+			console.error('не передан');
 		}
 	}, [url]);
 

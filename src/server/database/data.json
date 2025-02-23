@@ -246,5 +246,91 @@
 		{ "id": 58, "english": "Compassion", "russian": "Сострадание" },
 		{ "id": 59, "english": "Responsibility", "russian": "Ответственность" },
 		{ "id": 60, "english": "Love", "russian": "Любовь" }
+	],
+	"texts": [
+		{
+			"id": 1,
+			"title": "My First Day as an Engineer at the Factory",
+			"description": "Today was my first day as an engineer at the factory. I arrived early in the morning, feeling excited and a little nervous. The factory was big, and there were many machines working. I met my manager, who showed me around the factory. First, we visited the production line. I saw workers assembling products. They worked fast and carefully. My manager explained how each machine works. I learned about safety rules too. It is important to wear a helmet and safety glasses. After the tour, I had a meeting with my team. We discussed our projects and goals for the month. Everyone was friendly and helpful. I felt happy to be part of the team. In the afternoon, I started my first task. I helped to design a new part for a machine. It was interesting to use the computer software. I made some mistakes, but my colleagues helped me. At the end of the day, I felt tired but proud. I learned a lot and met great people. I am excited to continue my work here!",
+			"questions": [
+				"What time did I arrive at the factory?",
+				"Who showed me around the factory?",
+				"What did I see on the production line?",
+				"Why is it important to wear a helmet and safety glasses?",
+				"What did my team discuss in the meeting?",
+				"What was my first task in the afternoon?",
+				"How did I feel at the end of the day?"
+			],
+			"test": {
+				"questions": [
+					{
+						"question": "My first day was at the __________.",
+						"options": ["a) school", "b) factory", "c) office"],
+						"correctAnswer": "b"
+					},
+					{
+						"question": "I felt __________ when I arrived.",
+						"options": ["a) scared", "b) excited", "c) bored"],
+						"correctAnswer": "b"
+					},
+					{
+						"question": "I wore a __________ for safety.",
+						"options": ["a) hat", "b) helmet", "c) scarf"],
+						"correctAnswer": "b"
+					},
+					{
+						"question": "I helped to design a new __________.",
+						"options": ["a) machine", "b) product", "c) part"],
+						"correctAnswer": "c"
+					},
+					{
+						"question": "My colleagues were __________.",
+						"options": ["a) unfriendly", "b) helpful", "c) busy"],
+						"correctAnswer": "b"
+					}
+				]
+			}
+		},
+		{
+			"id": 2,
+			"title": "Problems I Solve at Work as a Veterinarian",
+			"description": "As a veterinarian, I face various challenges daily that require both my medical expertise and problem-solving skills. One of the most common issues I encounter is diagnosing illnesses in pets. Often, animals cannot communicate their symptoms clearly, making it crucial for me to observe their behavior closely and conduct thorough examinations. For instance, a dog may exhibit lethargy and loss of appetite, but the underlying cause could range from a simple stomach upset to a serious condition like pancreatitis. Another significant challenge is managing the emotional aspects of pet care. Many pet owners are understandably anxious when their beloved animals are unwell. I must provide not only medical solutions but also emotional support and clear communication to help them understand their pet's condition and treatment options. This requires a balance of empathy and professionalism to reassure owners while delivering sometimes difficult news. Additionally, I often deal with cases of animal abuse or neglect. It can be heartbreaking to see animals suffering due to human actions. In these situations, I work closely with local authorities and animal welfare organizations to ensure that these animals receive the care they need and that the responsible parties are held accountable. Preventative care is another area where I focus my efforts. Educating pet owners about vaccinations, nutrition, and regular check-ups is vital to preventing health issues before they arise. I often organize community workshops to raise awareness about responsible pet ownership, which helps reduce the number of stray animals and improves overall public health. Finally, staying updated with the latest veterinary practices and technologies is a continuous challenge. The field of veterinary medicine is constantly evolving, and I must commit to lifelong learning to provide the best care for my patients. This involves attending conferences, participating in online courses, and collaborating with colleagues to share knowledge and experiences. In conclusion, my role as a veterinarian involves solving a variety of problems, from diagnosing illnesses and providing emotional support to addressing issues of animal welfare and educating the community. Each day presents new challenges, but the opportunity to make a positive impact on the lives of animals and their owners makes it all worthwhile.",
+			"questions": [
+				"What is one common challenge veterinarians face?",
+				"Why is emotional support important in veterinary care?",
+				"How do veterinarians handle cases of animal abuse?",
+				"What is the focus of preventative care in veterinary medicine?",
+				"Why is continuous learning important for veterinarians?"
+			],
+			"test": {
+				"questions": [
+					{
+						"question": "One common challenge is __________.",
+						"options": ["a) diagnosing illnesses", "b) playing with pets", "c) grooming animals"],
+						"correctAnswer": "a"
+					},
+					{
+						"question": "Emotional support helps __________.",
+						"options": ["a) reduce anxiety in pet owners", "b) increase pet ownership", "c) improve pet food sales"],
+						"correctAnswer": "a"
+					},
+					{
+						"question": "Veterinarians work with __________ in cases of animal abuse.",
+						"options": ["a) local authorities", "b) pet shops", "c) dog trainers"],
+						"correctAnswer": "a"
+					},
+					{
+						"question": "Preventative care includes __________.",
+						"options": ["a) emergency surgeries", "b) educating pet owners", "c) breeding animals"],
+						"correctAnswer": "b"
+					},
+					{
+						"question": "Continuous learning is important because __________.",
+						"options": ["a) it is required by law", "b) veterinary medicine is always changing", "c) it helps veterinarians earn more money"],
+						"correctAnswer": "b"
+					}
+				]
+			}
+		}
 	]
 }
