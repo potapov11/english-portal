@@ -13,6 +13,7 @@
 		"start-server": "json-server --watch ./src/server/database/data.json"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^2.5.1",
 		"@types/swiper": "^6.0.0",
 		"antd": "^5.24.1",
 		"classnames": "^2.5.1",

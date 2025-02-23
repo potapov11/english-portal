@@ -11,7 +11,7 @@ export const useFetchWords = (BASE_DB_URL: string, page: number, limit: number =
 	const [wordsState, setWordsState] = useState<IWordItem[]>([]);
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [totalPages, setTotalPages] = useState<number>(0); // Для хранения общего количества страниц
-	const typeWordStore = useSelector((store: any) => store.selectWordsReducer.selectedWordValue);
+	const typeWordStore = useSelector((store: any) => store.words[0]?.text);
 
 	useEffect(() => {
 		let url = '';
