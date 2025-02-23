@@ -19,4 +19,68 @@ export const words = [
 	{ id: 18, english: 'Happiness', russian: 'Счастье' },
 ];
 
+export const zoodoctorWords = [
+	{ id: 1, english: 'Veterinarian', russian: 'Ветеринар' },
+	{ id: 2, english: 'Animal', russian: 'Животное' },
+	{ id: 3, english: 'Health', russian: 'Здоровье' },
+	{ id: 4, english: 'Diagnosis', russian: 'Диагноз' },
+	{ id: 5, english: 'Treatment', russian: 'Лечение' },
+	{ id: 6, english: 'Surgery', russian: 'Хирургия' },
+	{ id: 7, english: 'Vaccination', russian: 'Вакцинация' },
+	{ id: 8, english: 'Pet', russian: 'Домашний питомец' },
+	{ id: 9, english: 'Clinic', russian: 'Клиника' },
+	{ id: 10, english: 'Medication', russian: 'Медикаменты' },
+	{ id: 11, english: 'Anesthesia', russian: 'Анестезия' },
+	{ id: 12, english: 'Nurse', russian: 'Медсестра' },
+	{ id: 13, english: 'Grooming', russian: 'Уход за животными' },
+	{ id: 14, english: 'Wellness', russian: 'Благополучие' },
+	{ id: 15, english: 'Parasite', russian: 'Паразит' },
+	{ id: 16, english: 'Rescue', russian: 'Спасение' },
+	{ id: 17, english: 'Flea', russian: 'Блоха' },
+	{ id: 18, english: 'Nutrition', russian: 'Питание' },
+];
+
+export const programmWords = [
+	{ id: 1, english: 'Variable', russian: 'Переменная' },
+	{ id: 2, english: 'Function', russian: 'Функция' },
+	{ id: 3, english: 'Loop', russian: 'Цикл' },
+	{ id: 4, english: 'Array', russian: 'Массив' },
+	{ id: 5, english: 'Object', russian: 'Объект' },
+	{ id: 6, english: 'Class', russian: 'Класс' },
+	{ id: 7, english: 'Inheritance', russian: 'Наследование' },
+	{ id: 8, english: 'Debugging', russian: 'Отладка' },
+	{ id: 9, english: 'Algorithm', russian: 'Алгоритм' },
+	{ id: 10, english: 'Syntax', russian: 'Синтаксис' },
+	{ id: 11, english: 'Compiler', russian: 'Компилятор' },
+	{ id: 12, english: 'Library', russian: 'Библиотека' },
+	{ id: 13, english: 'Framework', russian: 'Фреймворк' },
+	{ id: 14, english: 'Database', russian: 'База данных' },
+	{ id: 15, english: 'API', russian: 'API (интерфейс программирования приложений)' },
+	{ id: 16, english: 'Source code', russian: 'Исходный код' },
+	{ id: 17, english: 'Deployment', russian: 'Развертывание' },
+	{ id: 18, english: 'Version control', russian: 'Контроль версий' },
+];
+
+export const ingineerWords = [
+	{ id: 1, english: 'Engineering', russian: 'Инженерия' },
+	{ id: 2, english: 'Design', russian: 'Дизайн' },
+	{ id: 3, english: 'Prototype', russian: 'Прототип' },
+	{ id: 4, english: 'Blueprint', russian: 'Чертеж' },
+	{ id: 5, english: 'Analysis', russian: 'Анализ' },
+	{ id: 6, english: 'Innovation', russian: 'Инновация' },
+	{ id: 7, english: 'Construction', russian: 'Строительство' },
+	{ id: 8, english: 'Materials', russian: 'Материалы' },
+	{ id: 9, english: 'Mechanics', russian: 'Механика' },
+	{ id: 10, english: 'Thermodynamics', russian: 'Термодинамика' },
+	{ id: 11, english: 'Electronics', russian: 'Электроника' },
+	{ id: 12, english: 'Automation', russian: 'Автоматизация' },
+	{ id: 13, english: 'Simulation', russian: 'Симуляция' },
+	{ id: 14, english: 'Efficiency', russian: 'Эффективность' },
+	{ id: 15, english: 'Sustainability', russian: 'Устойчивое развитие' },
+	{ id: 16, english: 'Testing', russian: 'Тестирование' },
+	{ id: 17, english: 'Safety', russian: 'Безопасность' },
+	{ id: 18, english: 'Project management', russian: 'Управление проектом' },
+];
+
 export const ADD_SELECTED_WORD_TYPE = 'ADD_SELECTED_WORD_TYPE';
+export const BASE_DB_URL = 'http://localhost:3000';

@@ -8,7 +8,7 @@ export const SelectBar = (): React.JSX.Element => {
 	const handleChange = (value: string) => {
 		const newvalue = value;
 		console.error(newvalue);
-		dispatch(selectWordAction());
+		dispatch(selectWordAction(newvalue));
 	};
 
 	return (

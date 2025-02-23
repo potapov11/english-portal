@@ -1,0 +1,64 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-css-modules", "stylelint-config-recommended-scss"],
+	"plugins": ["stylelint-order", "stylelint-scss"],
+	"rules": {
+		"selector-class-pattern": "^[a-zA-Z][a-zA-Z0-9-_]*$",
+		"selector-id-pattern": "^[a-z][a-zA-Z0-9]+$",
+		"media-feature-range-notation": null,
+		"custom-property-pattern": null,
+		"alpha-value-notation": null,
+		"color-function-notation": null,
+		"value-keyword-case": [
+			"lower",
+			{
+				"ignoreProperties": ["composes"]
+			}
+		],
+		"declaration-block-no-redundant-longhand-properties": [
+			true,
+			{
+				"ignoreShorthands": ["grid-template"]
+			}
+		],
+		"function-url-quotes": "always",
+		"no-duplicate-selectors": true,
+		"order/properties-order": [
+			{
+				"emptyLineBefore": "never",
+				"properties": ["display", "position", "top", "right", "bottom", "left", "z-index"]
+			},
+			{
+				"emptyLineBefore": "never",
+				"properties": ["margin", "padding", "color", "background", "border"]
+			},
+			{
+				"emptyLineBefore": "never",
+				"properties": ["font-size", "font-family", "line-height"]
+			}
+		],
+		"scss/dollar-variable-colon-space-after": "always",
+		"scss/dollar-variable-colon-space-before": "never",
+		"scss/dollar-variable-pattern": "^[a-z]+([a-z0-9_-]*)$",
+		"scss/at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": ["use", "include", "extend", "mixin", "function", "if", "else", "for", "each", "while"]
+			}
+		],
+		"scss/double-slash-comment-whitespace-inside": "always",
+		"scss/no-duplicate-dollar-variables": true,
+		"scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9_-]*)$",
+		"property-no-unknown": [
+			true,
+			{
+				"ignoreProperties": ["composes"]
+			}
+		],
+		"indentation": 2,
+		"block-closing-brace-empty-line-before": "never",
+		"block-opening-brace-newline-after": "always-multi-line",
+		"block-opening-brace-space-after": "always-single-line",
+		"block-closing-brace-newline-before": "always-multi-line",
+		"block-closing-brace-space-before": "always-single-line"
+	}
+}

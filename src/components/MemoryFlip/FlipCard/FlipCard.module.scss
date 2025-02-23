@@ -26,10 +26,18 @@
 }
 
 .card .front {
+	hyphens: auto;
+	word-break: break-all;
 	background-color: #3498db;
 }
 
 .card .back {
+	hyphens: auto;
+	word-break: break-all;
 	background-color: #e74c3c;
 	transform: rotateY(180deg);
+}
+
+.cardWord {
+	padding: 0 10px;
 }
