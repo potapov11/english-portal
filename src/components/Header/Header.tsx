@@ -34,7 +34,7 @@ export const Header = (): React.JSX.Element => {
 						</Link>
 					</li>
 					<li className={styles.header_list_item}>
-						<Link to="/" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
+						<Link to="/texts" className={classNames(styles.header_list_link, { [styles.header_list_link_white_mode]: lightHeader })}>
 							Тексты
 						</Link>
 					</li>

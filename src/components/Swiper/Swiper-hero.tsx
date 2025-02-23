@@ -11,7 +11,7 @@ export const HeroSwiper = (): React.JSX.Element => (
 			<div className={classNames(styles.hero_img_wrap, styles.hero_img_wrap_first)} />
 		</SwiperSlide>
 		<SwiperSlide>
-			<div className={classNames(styles.hero_img_wrap, styles.hero_img_wrap_second)}>{/* <img className={styles.hero_img} src={silde2} alt="silde2" /> */}</div>
+			<div className={classNames(styles.hero_img_wrap, styles.hero_img_wrap_second)} />
 		</SwiperSlide>
 		<SwiperSlide>
 			<div className={classNames(styles.hero_img_wrap, styles.hero_img_wrap_third)} />
