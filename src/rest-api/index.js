@@ -1,4 +1,6 @@
 import express from 'express';
+import jwt from 'jsonwebtoken';
+
 const app = express();
 
 app.use(express.json());
@@ -12,8 +14,18 @@ app.get('/', (req, res) => {
 app.post('/auth/login', (req, res) => {
 	console.log(req.body, 'req.body');
 
+	//Создаем токен
+	const token = jwt.sign(
+		{
+			email: req.body.email,
+			fullName: 'Вася Пупкин',
+		},
+		'randominfo', //здесь рандомная информация
+	);
+
 	res.json({
 		success: true,
+		token,
 	});
 });
 
