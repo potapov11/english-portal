@@ -10,6 +10,8 @@
 		"lint": "eslint src --fix",
 		"lint:check": "eslint src",
 		"prepare": "husky",
+		"start:dev": "nodemon src/rest-api/index.js",
+		"start:serv": "node src/rest-api/index.js",
 		"start-server": "json-server --watch ./src/server/database/data.json"
 	},
 	"dependencies": {
@@ -17,8 +19,10 @@
 		"@types/swiper": "^6.0.0",
 		"antd": "^5.24.1",
 		"classnames": "^2.5.1",
+		"express": "^4.21.2",
 		"json-server": "^1.0.0-beta.3",
 		"motion": "^12.4.4",
+		"nodemon": "^3.1.9",
 		"normalize.css": "^8.0.1",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
